@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -24,7 +26,6 @@ public class MainActivity<auto> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonSave = (Button)findViewById(R.id.button);
         Button buttonPrint = (Button) findViewById(R.id.button2);
         //final ArrayList<String> names = new ArrayList<String>();
         final SortedSet<String> names = new TreeSet<>();
@@ -33,19 +34,40 @@ public class MainActivity<auto> extends AppCompatActivity {
         final TextView arrText = (TextView) findViewById(R.id.textView2);
         final Collator collator = Collator.getInstance(new Locale("ru")); //для буквы ё чоб не лезла вниз
 
-        buttonSave.setOnClickListener(new View.OnClickListener() {
+//        buttonSave.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                messageText.setVisibility(View.VISIBLE); // Делаю выдимым уведомление
+//                names.add(text.getText().toString());    // Заполнение массива
+//                messageText.setText("Участник добавлен");
+//                text.setText("");
+//                messageText.postDelayed(new Runnable() {  // скрываю увед через 3 секунды
+//                    @Override
+//                    public void run() {
+//                        messageText.setVisibility(View.INVISIBLE);
+//                    }
+//                }, 3000);
+//            }
+//        });
+        text.setOnKeyListener(new View.OnKeyListener() {
             @Override
-            public void onClick(View view) {
-                messageText.setVisibility(View.VISIBLE); // Делаю выдимым уведомление
-                names.add(text.getText().toString());    // Заполнение массива
-                messageText.setText("Участник добавлен");
-                text.setText("");
-                messageText.postDelayed(new Runnable() {  // скрываю увед через 3 секунды
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)){
+                    Toast.makeText(MainActivity.this, text.getText(), Toast.LENGTH_SHORT).show();
+
+                    messageText.setText("Участник добавлен");
+                    text.setText("");
+                    messageText.postDelayed(new Runnable() {  // скрываю увед через 3 секунды
                     @Override
-                    public void run() {
-                        messageText.setVisibility(View.INVISIBLE);
-                    }
-                }, 3000);
+                        public void run() {
+                            messageText.setVisibility(View.INVISIBLE);
+                        }
+                    }, 3000);
+
+
+                    return true;
+                }
+                return false;
             }
         });
 
