@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Pushkin">Sorry, there is nothing!</string>
+    <string name="textT1" translatable="false">Боль и страдание</string>
+</resources>
