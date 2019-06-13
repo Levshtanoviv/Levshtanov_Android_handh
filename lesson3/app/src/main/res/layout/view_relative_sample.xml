@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="14dp"
+        android:text="@string/data_person"
+        android:textColor="#f5bf1f"
+        android:textSize="@dimen/font_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/name_person"
+            android:textColor="@color/title_person"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/textNamePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textName"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_person"
+            android:textSize="@dimen/font_text"
+            tools:text="Анастасия" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/textSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/surname_person"
+            android:textColor="@color/title_person"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/textSurnamePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textSurname"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_person"
+            android:textSize="@dimen/font_text"
+            tools:text="Антонина" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/textMail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/mail_person"
+            android:textColor="@color/title_person"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/textMailPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textMail"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_person"
+            android:textSize="@dimen/font_text"
+            tools:text="anykee.box@gmail.ru" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/login_person"
+            android:textColor="@color/title_person"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/textLoginPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textLogin"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_person"
+            android:textSize="@dimen/font_text"
+            tools:text="HIE023UOI88" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/textRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/region_person"
+            android:textColor="@color/title_person"
+            android:textSize="@dimen/font_title" />
+
+        <TextView
+            android:id="@+id/textRegionPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textRegion"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_person"
+            android:textSize="@dimen/font_text"
+            tools:text="Санкт-Петербург" />
+
+        <ImageButton
+            android:id="@+id/buttonEditRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/ic_edit_black_24_px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+
+        android:paddingEnd="9dp">
+
+        <ImageButton
+            android:id="@+id/buttonExit"
+            android:layout_width="21dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/ic_menu_exit" />
+
+        <TextView
+            android:id="@+id/textExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@+id/buttonExit"
+            android:text="@string/exit_person"
+            android:textColor="@color/text_person" />
+    </RelativeLayout>
+
+</LinearLayout>

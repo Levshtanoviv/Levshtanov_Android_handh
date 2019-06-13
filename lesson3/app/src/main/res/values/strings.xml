@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name_person">Имя</string>
+    <string name="surname_person">Фамилия</string>
+    <string name="mail_person">E-mail</string>
+    <string name="login_person">Логин</string>
+    <string name="region_person">Ваш регион</string>
+    <string name="exit_person">Выйти из аккаунта</string>
+    <string name="data_person">Личные данные</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
