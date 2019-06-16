@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">lesson4</string>
+
+    <string name="tab0">Квитанция</string>
+    <string name="tab1">Счетчики</string>
+    <string name="tab2">Рассрочка</string>
+    <string name="tab3">Страхование</string>
+    <string name="tab4">Интернет и ТВ</string>
+    <string name="tab5">Домофон</string>
+    <string name="tab6">Охрана</string>
+    <string name="tab7">Контакты УК и служб</string>
+    <string name="tab8">Мои заявкиофон</string>
+    <string name="tab9">Памятка жителя А101</string>
+    <string-array name="title">
+        <item>@string/tab0</item>
+        <item>@string/tab1</item>
+        <item>@string/tab2</item>
+        <item>@string/tab3</item>
+        <item>@string/tab4</item>
+        <item>@string/tab5</item>
+        <item>@string/tab6</item>
+        <item>@string/tab7</item>
+        <item>@string/tab8</item>
+        <item>@string/tab9</item>
+    </string-array>
+
+    <string name="not0">- 40 080,55 ₽</string>
+    <string name="not1">Подайте показания</string>
+    <string name="not2">Сл. платеж 25.02.2018</string>
+    <string name="not3">Полис до 12.01.2019</string>
+    <string name="not4">Баланс 350 ₽</string>
+    <string name="not5">Подключен</string>
+    <string name="not6">Нет</string>
+    <string-array name="not">
+        <item>@string/not0</item>
+        <item>@string/not1</item>
+        <item>@string/not2</item>
+        <item>@string/not3</item>
+        <item>@string/not4</item>
+        <item>@string/not5</item>
+        <item>@string/not6</item>
+    </string-array>
+
+</resources>
